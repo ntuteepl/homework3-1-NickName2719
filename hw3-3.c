@@ -23,10 +23,10 @@ int main(){
         printf ( "%d\n", bo );
     }
     else {
-        if ( a0 < b0 ) {
+        if ( ao < bo ) {
             printf ( "%d\n", ao ) ;
         }
-        else if ( b0 < a0 ) {
+        else if ( bo < ao ) {
             printf ( "%d\n", bo ) ;
         }
     }
