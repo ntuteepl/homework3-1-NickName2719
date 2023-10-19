@@ -15,10 +15,12 @@ int main(){
         counter += 1 ;
     }
     if ( d1 <= s3 ) {
-
     }
     else if ( d3 <= s1 ) {
-
+    }
+    else if ( d2 <= s3 ) {
+    }
+    else if ( d3 <= s2 ) {
     }
     else {
         counter += 1 ;
