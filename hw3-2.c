@@ -2,25 +2,26 @@
 #include <stdlib.h>
 
 int main(){
-    int s, d, s2, d2, i, temp ;
+    int s1, d1, s2, d2, s3, d3 ;
     int counter = 1;
-    scanf( "%d%d", &s, &d );
-    for ( i = 0 ; i < 2 ; i++  ) {
-        scanf( "%d%d", &s2, &d2 );
-        if ( s >= s2 ) {
-            temp = s ;
-            s = s2 ;
-            s2 = temp ;
-            temp = d ;
-            d = d2 ;
-            d2 = temp ;
-        }
-        if ( d <= s2 ) {
-            d = d2 ;
-        }
-        else {
-            counter++ ;
-        }
+    scanf( "%d%d%d%d%d%d", &s1, &d1, &s2, &d2, &s3, &d3 );
+    if ( d1 <= s2 ) {
+        d1 = d2 ;
+    }
+    else if ( d2 <= s1 ) {
+        s1 = s2 ;
+    }
+    else {
+        counter += 1 ;
+    }
+    if ( d1 <= s3 ) {
+
+    }
+    else if ( d3 <= s1 ) {
+
+    }
+    else {
+        counter += 1 ;
     }
     printf("%d\n", counter);
 }
